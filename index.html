@@ -1,163 +1,592 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es-AR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="NOVA, tecnología premium con atención experta, envíos a todo el país y hasta 6 cuotas sin interés." />
-    <meta name="theme-color" content="#f5f5f7" />
-    <title>NOVA — Tecnología que se siente</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="announcement-bar">Envío gratis en compras seleccionadas <span aria-hidden="true">·</span> Hasta 6 cuotas sin interés</div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iPhone y Apple en San Nicolás de los Arroyos | iStore SN</title>
+  <meta name="description" content="Tienda Apple en San Nicolás de los Arroyos (Buenos Aires). Comprá iPhone, Mac, iPad y accesorios con garantía oficial, retiro en el día y Mercado Pago. WhatsApp +54 0336 4018313.">
+  <meta name="keywords" content="iPhone San Nicolás, Apple San Nicolás de los Arroyos, tienda Apple San Nicolás, Mac San Nicolás, iPad San Nicolás, comprar iPhone San Nicolás, celulares San Nicolás de los Arroyos, iStore SN">
+  <meta name="author" content="iStore San Nicolás de los Arroyos">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="googlebot" content="index, follow">
+  <meta name="theme-color" content="#F5F5F7">
+  <meta name="geo.region" content="AR-B">
+  <meta name="geo.placename" content="San Nicolás de los Arroyos">
+  <meta name="geo.position" content="-33.3358;-60.2252">
+  <meta name="ICBM" content="-33.3358, -60.2252">
+  <link rel="canonical" href="https://istore-sn.com.ar/">
 
-    <header class="site-header" id="top">
-      <nav class="nav container" aria-label="Navegación principal">
-        <a class="brand" href="#top" aria-label="NOVA inicio">NOVA<span>.</span></a>
-        <button class="nav-menu-button icon-button" type="button" aria-label="Abrir menú" aria-expanded="false">
-          <span></span><span></span>
-        </button>
-        <div class="nav-links" id="navLinks">
-          <a href="#iphone">iPhone</a>
-          <a href="#mac">Mac</a>
-          <a href="#ipad">iPad</a>
-          <a href="#accesorios">Accesorios</a>
-          <a href="#soporte">Soporte</a>
-        </div>
-        <div class="nav-actions">
-          <button class="icon-button" id="searchButton" type="button" aria-label="Buscar productos">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.7" cy="10.7" r="6.2"></circle><path d="m16 16 4.2 4.2"></path></svg>
-          </button>
-          <button class="icon-button cart-button" id="cartButton" type="button" aria-label="Abrir carrito">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 5.5h2l1.8 10.2h9.6l2-7.3H6.1"></path><circle cx="9" cy="19.2" r="1"></circle><circle cx="17" cy="19.2" r="1"></circle></svg>
-            <span class="cart-count" id="cartCount">0</span>
-          </button>
-        </div>
+  <!-- Open Graph -->
+  <meta property="og:title" content="iPhone y Apple en San Nicolás de los Arroyos | iStore SN">
+  <meta property="og:description" content="Tienda Apple en San Nicolás. iPhone, Mac e iPad con garantía oficial, cuotas y retiro en el día. WhatsApp +54 0336 4018313.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:site_name" content="iStore San Nicolás">
+  <meta property="og:url" content="https://istore-sn.com.ar/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=1200&q=80">
+  <meta property="og:image:alt" content="iPhone en iStore San Nicolás de los Arroyos">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="iStore San Nicolás — Apple en San Nicolás de los Arroyos">
+  <meta name="twitter:description" content="iPhone, Mac e iPad en San Nicolás. Retiro en local, Mercado Pago y garantía oficial.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=1200&q=80">
+
+  <link rel="alternate" hreflang="es-AR" href="https://istore-sn.com.ar/">
+  <link rel="alternate" hreflang="x-default" href="https://istore-sn.com.ar/">
+
+  <!-- Performance: conexiones tempranas + LCP -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+  <link rel="dns-prefetch" href="https://images.unsplash.com">
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=1200&q=75&auto=format&fit=max" fetchpriority="high">
+  <link rel="preload" href="styles.css" as="style">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Datos estructurados: LocalBusiness + Store (SEO local) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Store", "ElectronicsStore", "LocalBusiness"],
+    "@id": "https://istore-sn.com.ar/#negocio",
+    "name": "iStore San Nicolás",
+    "alternateName": ["iStore SN", "iStore San Nicolás de los Arroyos"],
+    "description": "Tienda especializada en productos Apple en San Nicolás de los Arroyos: iPhone, Mac, iPad y accesorios con garantía oficial, retiro en local y Mercado Pago.",
+    "url": "https://istore-sn.com.ar/",
+    "telephone": "+5403364018313",
+    "image": "https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=1200&q=80",
+    "priceRange": "$$",
+    "currenciesAccepted": "ARS",
+    "paymentAccepted": "Mercado Pago, Credit Card, Debit Card, Cash, Bank Transfer",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "San Nicolás de los Arroyos",
+      "addressRegion": "Buenos Aires",
+      "postalCode": "2900",
+      "addressCountry": "AR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -33.3358,
+      "longitude": -60.2252
+    },
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "San Nicolás de los Arroyos"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Partido de San Nicolás"
+      }
+    ],
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "10:00",
+        "closes": "19:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "10:00",
+        "closes": "14:00"
+      }
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+5403364018313",
+      "contactType": "customer service",
+      "areaServed": "AR",
+      "availableLanguage": ["Spanish"]
+    },
+    "sameAs": [
+      "https://wa.me/5403364018313"
+    ]
+  }
+  </script>
+
+  <!-- FAQ local (rich results) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Dónde comprar iPhone en San Nicolás de los Arroyos?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "En iStore San Nicolás podés comprar iPhone, Mac, iPad y accesorios Apple con garantía oficial. Retiro en el local o consulta por envío. WhatsApp +54 0336 4018313."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Hacen retiro en el día en San Nicolás?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. Con stock disponible podés retirar en el día en nuestro local de San Nicolás de los Arroyos. Confirmá por WhatsApp antes de venir."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué medios de pago aceptan?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Aceptamos Mercado Pago, tarjetas de crédito y débito, transferencia bancaria (con descuento) y consulta por efectivo en el local."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Los equipos tienen garantía oficial Apple?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. Trabajamos con productos originales y garantía oficial de 12 meses."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- WebSite + SearchAction -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "iStore San Nicolás",
+    "url": "https://istore-sn.com.ar/",
+    "inLanguage": "es-AR",
+    "publisher": {
+      "@type": "Organization",
+      "name": "iStore San Nicolás",
+      "telephone": "+5403364018313"
+    }
+  }
+  </script>
+</head>
+<body>
+  <a href="#main" class="skip-link">Saltar al contenido principal</a>
+
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="logo" aria-label="iStore San Nicolás">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.32-2.48 3.96-2.48 1.27 0 2.42.87 3.28.87.85 0 2.18-.95 3.74-.81.63.03 2.41.25 3.55 1.9-3.16 1.85-2.65 5.86.64 7.13-.55 1.33-1.28 2.6-2.16 3.5zM13 3.5c.73-.83 1.22-1.98 1.08-3.13-1.05.05-2.31.7-3.06 1.58-.67.79-1.26 2.05-1.1 3.25 1.16.09 2.35-.61 3.08-1.7z"/></svg>
+        <span>iStore</span>
+        <span class="logo-city">SN</span>
+      </a>
+      <nav class="nav-links" id="navLinks" aria-label="Principal">
+        <a href="#productos" data-filter="iphone">iPhone</a>
+        <a href="#productos" data-filter="mac">Mac</a>
+        <a href="#productos" data-filter="ipad">iPad</a>
+        <a href="#productos" data-filter="accesorios">Accesorios</a>
+        <a href="#local">Local</a>
+        <a href="#soporte">Soporte</a>
       </nav>
-    </header>
-
-    <div class="search-panel" id="searchPanel" aria-hidden="true">
-      <div class="container search-inner">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.7" cy="10.7" r="6.2"></circle><path d="m16 16 4.2 4.2"></path></svg>
-        <input id="searchInput" type="search" placeholder="Buscar productos" autocomplete="off" />
-        <button class="text-button" type="button" id="closeSearch">Cancelar</button>
+      <div class="nav-actions">
+        <a class="nav-phone" href="tel:+5403364018313" aria-label="Llamar">0336 401-8313</a>
+        <button class="icon-btn" aria-label="Buscar" id="searchBtn" type="button">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </button>
+        <button class="icon-btn" aria-label="Favoritos" id="wishlistBtn" type="button">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          <span class="wish-count" id="wishCount">0</span>
+        </button>
+        <button class="icon-btn cart-btn" aria-label="Carrito" id="cartBtn" type="button">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menú" type="button" aria-expanded="false"><span></span><span></span><span></span></button>
       </div>
     </div>
+  </header>
 
-    <main>
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-glow glow-one"></div><div class="hero-glow glow-two"></div>
-        <div class="container hero-content">
-          <div class="hero-copy reveal">
-            <p class="eyebrow">Presentamos el nuevo</p>
-            <h1 id="hero-title">Iphone <span>18</span></h1>
-            <p class="hero-subtitle">Potencia sin límites.<br />Diseño que se siente.</p>
-            <div class="hero-actions">
-              <a class="button button-primary" href="#iphone">Comprar</a>
-              <a class="button button-secondary" href="#descubrir">Conocé más <span aria-hidden="true">→</span></a>
-            </div>
-            <p class="hero-finance">Desde $1.299.999 o 6 cuotas sin interés</p>
-          </div>
-          <div class="hero-device-wrap" aria-label="Teléfono Aura Pro en titanio oscuro">
-            <div class="hero-orbit orbit-a"></div><div class="hero-orbit orbit-b"></div>
-            <div class="hero-phone">
-              <div class="phone-side-buttons"></div>
-              <div class="phone-screen"><div class="dynamic-island"></div><div class="screen-light"></div><span>09:41</span><div class="screen-wave wave-one"></div><div class="screen-wave wave-two"></div></div>
-              <div class="phone-reflection"></div>
-            </div>
-            <div class="phone-shadow"></div>
-          </div>
-        </div>
-        <a class="scroll-cue" href="#iphone" aria-label="Ir a productos"><span></span>Descubrí</a>
-      </section>
-
-      <section class="trust-strip" aria-label="Beneficios de NOVA">
-        <div class="container trust-grid">
-          <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 5.5 6.1v5.2c0 4.3 2.7 7.7 6.5 9.7 3.8-2 6.5-5.4 6.5-9.7V6.1L12 3Z"></path><path d="m9 12 2 2 4-4"></path></svg><p><strong>Garantía oficial</strong><br />Tu compra, siempre protegida</p></div>
-          <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h11v10H3z"></path><path d="M14 9h3.2L21 12.3V16h-7z"></path><circle cx="7" cy="18" r="1.5"></circle><circle cx="17" cy="18" r="1.5"></circle></svg><p><strong>Envíos a todo el país</strong><br />Rápido, seguro y sin vueltas</p></div>
-          <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.3-5.7"></path><path d="M20 4v5h-5"></path><path d="M12 8v4l2.5 1.5"></path></svg><p><strong>Plan canje</strong><br />Entregá tu equipo y renová</p></div>
-        </div>
-      </section>
-
-      <section class="products section" id="iphone" aria-labelledby="products-title">
-        <div class="container">
-          <div class="section-heading reveal">
-            <p class="eyebrow">Encontrá tu próximo favorito</p>
-            <div><h2 id="products-title">Elegidos para vos.</h2><a class="inline-link" href="#todos">Ver todo <span>→</span></a></div>
-          </div>
-          <div class="product-grid" id="productGrid">
-            <article class="product-card reveal" data-product="Aura Pro" data-category="iphone">
-              <span class="product-label">Novedad</span>
-              <button class="wish-button" type="button" aria-label="Guardar Aura Pro"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 8.7c0 5.1-8.8 10.3-8.8 10.3S3.2 13.8 3.2 8.7c0-2.1 1.7-3.7 3.8-3.7 2 0 3.6 1.3 4.4 2.8C12.2 6.3 14 5 16 5c2.1 0 4.8 1.6 4.8 3.7Z"></path></svg></button>
-              <div class="product-art phone-card-art aura-blue"><div class="mini-phone"><div class="mini-island"></div><div class="mini-sphere"></div></div></div>
-              <div class="product-info"><p class="product-kind">Smartphone</p><h3>Iphone Pro</h3><p class="product-price">$1.299.999</p><div class="product-bottom"><div class="swatches" aria-label="Colores disponibles"><button class="swatch blue active" type="button" aria-label="Azul titanio"></button><button class="swatch sand" type="button" aria-label="Arena"></button><button class="swatch black" type="button" aria-label="Negro espacial"></button></div><button class="add-button" type="button" data-add="Aura Pro">Agregar <span>+</span></button></div></div>
-            </article>
-            <article class="product-card reveal" data-product="Studio Max" data-category="mac" id="mac">
-              <button class="wish-button" type="button" aria-label="Guardar Studio Max"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 8.7c0 5.1-8.8 10.3-8.8 10.3S3.2 13.8 3.2 8.7c0-2.1 1.7-3.7 3.8-3.7 2 0 3.6 1.3 4.4 2.8C12.2 6.3 14 5 16 5c2.1 0 4.8 1.6 4.8 3.7Z"></path></svg></button>
-              <div class="product-art laptop-card-art"><div class="laptop-screen"><div class="laptop-gradient"></div></div><div class="laptop-base"></div></div>
-              <div class="product-info"><p class="product-kind">Notebook</p><h3>Mac Book Pro 14</h3><p class="product-price">$1.899.999</p><div class="product-bottom"><div class="swatches" aria-label="Colores disponibles"><button class="swatch silver active" type="button" aria-label="Plata"></button><button class="swatch graphite" type="button" aria-label="Grafito"></button></div><button class="add-button" type="button" data-add="Studio Max 14">Agregar <span>+</span></button></div></div>
-            </article>
-            <article class="product-card reveal" data-product="Pulse Pods" data-category="accesorios" id="accesorios">
-              <span class="product-label label-sale">-15%</span>
-              <button class="wish-button" type="button" aria-label="Guardar Pulse Pods"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 8.7c0 5.1-8.8 10.3-8.8 10.3S3.2 13.8 3.2 8.7c0-2.1 1.7-3.7 3.8-3.7 2 0 3.6 1.3 4.4 2.8C12.2 6.3 14 5 16 5c2.1 0 4.8 1.6 4.8 3.7Z"></path></svg></button>
-              <div class="product-art pods-card-art"><div class="pods-case"><div class="pod p1"></div><div class="pod p2"></div></div><div class="pods-shadow"></div></div>
-              <div class="product-info"><p class="product-kind">Audio</p><h3>Air Pods Pro</h3><p class="product-price"><del>$289.999</del> $246.499</p><div class="product-bottom"><div class="swatches" aria-label="Colores disponibles"><button class="swatch white active" type="button" aria-label="Blanco"></button><button class="swatch black" type="button" aria-label="Negro"></button></div><button class="add-button" type="button" data-add="Pulse Pods">Agregar <span>+</span></button></div></div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="promo-banner reveal" id="ipad">
-        <div class="container promo-inner">
-          <div><p class="eyebrow">Plan NOVA Trade-in</p><h2>Tu próximo equipo<br />empieza con el actual.</h2><p>Entregá tu dispositivo usado, cotizalo en minutos y usalo como parte de pago.</p><a class="inline-link light-link" href="#soporte">Cotizar mi equipo <span>→</span></a></div>
-          <div class="trade-devices" aria-hidden="true"><div class="trade-phone back"></div><div class="trade-phone front"><div class="trade-dot"></div></div></div>
-        </div>
-      </section>
-
-      <section class="feature-section section" id="descubrir">
-        <div class="container feature-row reveal">
-          <div class="feature-visual support-visual"><div class="support-ring"></div><div class="support-card"><span>24/7</span><small>Estamos cerca</small></div><div class="support-icon">✦</div></div>
-          <div class="feature-copy"><p class="eyebrow">Experiencia NOVA</p><h2>Te acompañamos<br />antes y después.</h2><p>Elegí con el asesoramiento de personas que conocen la tecnología. Configuración inicial, migración de datos y soporte cuando lo necesitás.</p><a class="text-link" href="#soporte">Conocé nuestro soporte <span>→</span></a></div>
-        </div>
-        <div class="container feature-row feature-row-reverse reveal">
-          <div class="feature-copy"><p class="eyebrow">Una compra, muchas posibilidades</p><h2>Elegí cómo y cuándo pagar.</h2><p>Pagá con tarjeta, transferencia o cuotas sin interés. Todo claro desde el primer momento y con factura A o B.</p><a class="text-link" href="#soporte">Ver medios de pago <span>→</span></a></div>
-          <div class="feature-visual finance-visual"><div class="finance-card back-card">••••&nbsp; 3942</div><div class="finance-card front-card"><span>NOVA</span><small>CUOTAS<br />SIN INTERÉS</small><i></i></div></div>
-        </div>
-      </section>
-
-      <section class="newsletter" id="soporte">
-        <div class="container newsletter-inner reveal">
-          <div><p class="eyebrow">Novedades que importan</p><h2>Un poco de tecnología<br />en tu bandeja.</h2><p>Lanzamientos, beneficios y tips. Sin spam.</p></div>
-          <form class="newsletter-form" id="newsletterForm" novalidate>
-            <label class="sr-only" for="email">Tu correo electrónico</label>
-            <input id="email" type="email" placeholder="Tu correo electrónico" required />
-            <button class="button button-primary" type="submit">Suscribirme</button>
-            <p class="form-message" id="formMessage" role="status"></p>
-          </form>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container footer-main">
-        <div class="footer-brand"><a class="brand" href="#top">NOVA<span>.</span></a><p>Tecnología premium, atención humana.</p><div class="socials"><a href="#instagram" aria-label="Instagram">ig</a><a href="#facebook" aria-label="Facebook">f</a><a href="#tiktok" aria-label="TikTok">tt</a></div></div>
-        <div><h3>Comprar</h3><a href="#iphone">Smartphones</a><a href="#mac">Computadoras</a><a href="#ipad">Tablets</a><a href="#accesorios">Accesorios</a></div>
-        <div><h3>Ayuda</h3><a href="#soporte">Preguntas frecuentes</a><a href="#soporte">Envíos y entregas</a><a href="#soporte">Cambios y devoluciones</a><a href="#soporte">Servicio técnico</a></div>
-        <div><h3>Nosotros</h3><a href="#top">Nuestra historia</a><a href="#soporte">Locales</a><a href="#soporte">Contacto</a><a href="#soporte">Empresas</a></div>
+  <main id="main">
+  <section class="hero" id="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">San Nicolás de los Arroyos</p>
+      <h1 class="hero-title">iPhone 16 Pro</h1>
+      <p class="hero-tagline">Titanio. A18 Pro. Cámara pro.<br>Retiro en el día o envío a domicilio.</p>
+      <div class="hero-ctas">
+        <a href="#productos" class="btn btn-primary">Comprar</a>
+        <a href="#features" class="btn btn-secondary">Conocé más</a>
       </div>
-      <div class="container footer-bottom"><p>© 2026 NOVA. Todos los derechos reservados.</p><div><a href="#legales">Privacidad</a><a href="#legales">Términos y condiciones</a><a href="#legales">Defensa del consumidor</a></div></div>
-    </footer>
+      <div class="hero-trust">
+        <span>Retiro en local</span><span class="dot">·</span>
+        <span>12 cuotas</span><span class="dot">·</span>
+        <span>Mercado Pago</span><span class="dot">·</span>
+        <span>Garantía oficial</span>
+      </div>
+    </div>
+    <div class="hero-image-wrapper">
+      <img src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=1200&q=75&auto=format&fit=max" alt="iPhone 16 Pro" class="hero-image" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
+    </div>
+  </section>
 
-    <aside class="cart-drawer" id="cartDrawer" aria-label="Carrito de compras" aria-hidden="true">
-      <div class="drawer-header"><div><p class="eyebrow">Tu selección</p><h2>Carrito</h2></div><button class="icon-button" type="button" id="closeCart" aria-label="Cerrar carrito">×</button></div>
-      <div class="cart-items" id="cartItems"><div class="empty-cart"><span>⌁</span><p>Tu carrito está esperando<br />algo increíble.</p><a href="#iphone" id="emptyCartLink">Ver productos</a></div></div>
-      <div class="cart-footer"><div><span>Subtotal</span><strong id="cartTotal">$0</strong></div><button class="button button-primary full-button" type="button">Finalizar compra</button><p>Envío e impuestos calculados al finalizar.</p></div>
-    </aside>
-    <div class="overlay" id="overlay"></div>
-    <div class="toast" id="toast" role="status">Producto agregado al carrito <span>✓</span></div>
-    <script src="app.js"></script>
-  </body>
+  <section class="trust-bar" aria-label="Beneficios">
+    <div class="trust-inner">
+      <div class="trust-item">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <div><strong>Garantía oficial</strong><span>12 meses Apple</span></div>
+      </div>
+      <div class="trust-item">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        <div><strong>Local en San Nicolás</strong><span>Retiro en el día</span></div>
+      </div>
+      <div class="trust-item">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+        <div><strong>Hasta 12 cuotas</strong><span>Con Mercado Pago</span></div>
+      </div>
+      <div class="trust-item">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <div><strong>WhatsApp directo</strong><span>0336 401-8313</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="products" id="productos">
+    <div class="section-header reveal">
+      <h2>Productos destacados</h2>
+      <p>Stock en San Nicolás. Precios en pesos. Asesoramiento personalizado.</p>
+    </div>
+    <div class="product-toolbar reveal">
+      <div class="filter-chips" role="group" aria-label="Categoría">
+        <button type="button" class="chip active" data-filter="all">Todos</button>
+        <button type="button" class="chip" data-filter="iphone">iPhone</button>
+        <button type="button" class="chip" data-filter="mac">Mac</button>
+        <button type="button" class="chip" data-filter="ipad">iPad</button>
+        <button type="button" class="chip" data-filter="accesorios">Accesorios</button>
+      </div>
+      <div class="sort-wrap">
+        <label for="sortSelect" class="sr-only">Ordenar</label>
+        <select id="sortSelect" class="sort-select">
+          <option value="featured">Destacados</option>
+          <option value="price-asc">Precio: menor a mayor</option>
+          <option value="price-desc">Precio: mayor a menor</option>
+          <option value="name">Nombre A–Z</option>
+        </select>
+      </div>
+    </div>
+    <div class="product-grid" id="productGrid" aria-live="polite"></div>
+    <p class="no-results" id="noResults" hidden>No hay productos en esta categoría.</p>
+  </section>
+
+  <section class="features" id="features">
+    <div class="feature-row">
+      <div class="feature-text reveal-left">
+        <h3>Por qué comprar en iStore SN</h3>
+        <p>Somos tu tienda Apple de confianza en San Nicolás de los Arroyos. Productos originales, atención cercana y la misma experiencia premium que esperás de la marca.</p>
+        <ul class="feature-list">
+          <li>Equipos sellados con garantía oficial</li>
+          <li>Asesoramiento antes y después de la compra</li>
+          <li>Retiro en local o envío a domicilio</li>
+        </ul>
+        <a href="#local" class="feature-link">Cómo llegar →</a>
+      </div>
+      <div class="feature-image reveal-right">
+        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800&q=80" alt="Comprar Apple en San Nicolás de los Arroyos en iStore SN" loading="lazy" width="800" height="500">
+      </div>
+    </div>
+    <div class="feature-row reverse">
+      <div class="feature-text reveal-right">
+        <h3>Financiación y Mercado Pago</h3>
+        <p>Pagá en el acto con Mercado Pago, tarjeta o transferencia. Hasta 12 cuotas según el medio. Descuento por transferencia bancaria. Ideal si buscás iPhone en San Nicolás con cuotas.</p>
+        <a href="#productos" class="feature-link">Ver productos →</a>
+      </div>
+      <div class="feature-image reveal-left">
+        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80" alt="Medios de pago Mercado Pago en San Nicolás" loading="lazy" width="800" height="500">
+      </div>
+    </div>
+    <div class="feature-row">
+      <div class="feature-text reveal-left">
+        <h3>Trade-in y upgrades</h3>
+        <p>Entregá tu equipo usado y obtené un descuento en tu próximo iPhone o Mac en San Nicolás de los Arroyos. Consultanos por WhatsApp con modelo y estado.</p>
+        <a href="https://wa.me/5403364018313?text=Hola%2C%20quiero%20consultar%20por%20trade-in" class="feature-link" target="_blank" rel="noopener">Consultar trade-in →</a>
+      </div>
+      <div class="feature-image reveal-right">
+        <img src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=800&q=80" alt="Trade-in de iPhone en San Nicolás" loading="lazy" width="800" height="500">
+      </div>
+    </div>
+  </section>
+
+  <section class="categories" aria-label="Categorías">
+    <div class="category-card reveal-scale">
+      <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=600&q=80" alt="Mac" loading="lazy" width="600" height="750">
+      <div class="category-overlay"><h3>Mac</h3><p>Potencia profesional</p><button type="button" class="btn btn-small" data-filter="mac">Ver Mac</button></div>
+    </div>
+    <div class="category-card reveal-scale">
+      <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=600&q=80" alt="iPad" loading="lazy" width="600" height="750">
+      <div class="category-overlay"><h3>iPad</h3><p>Creatividad sin límites</p><button type="button" class="btn btn-small" data-filter="ipad">Ver iPad</button></div>
+    </div>
+    <div class="category-card reveal-scale">
+      <img src="https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=600&q=80" alt="AirPods" loading="lazy" width="600" height="750">
+      <div class="category-overlay"><h3>AirPods</h3><p>Sonido inmersivo</p><button type="button" class="btn btn-small" data-filter="accesorios">Ver audio</button></div>
+    </div>
+  </section>
+
+  <section class="store-section" id="local" itemscope itemtype="https://schema.org/LocalBusiness">
+    <meta itemprop="name" content="iStore San Nicolás">
+    <meta itemprop="telephone" content="+5403364018313">
+    <div class="store-inner reveal">
+      <div class="store-info">
+        <p class="store-label">Tienda Apple en San Nicolás</p>
+        <h2 itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span itemprop="addressLocality">San Nicolás de los Arroyos</span>
+        </h2>
+        <p class="store-desc">Si buscás <strong>iPhone en San Nicolás de los Arroyos</strong>, Mac o iPad, visitanos. Retiro en el día con stock disponible y atención personalizada de lunes a sábado en el partido de San Nicolás, Buenos Aires.</p>
+        <ul class="store-details">
+          <li><strong>Ciudad:</strong> San Nicolás de los Arroyos, Buenos Aires</li>
+          <li><strong>WhatsApp / Tel:</strong> <a href="tel:+5403364018313">+54 0336 4018313</a></li>
+          <li><strong>Horario:</strong> Lun–Vie 10 a 19 hs · Sáb 10 a 14 hs</li>
+          <li><strong>Envíos:</strong> SN y zona · Interior a coordinar</li>
+        </ul>
+        <div class="store-actions">
+          <a href="https://wa.me/5403364018313?text=Hola%2C%20quiero%20consultar%20stock%20en%20San%20Nicol%C3%A1s" class="btn btn-primary" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="tel:+5403364018313" class="btn btn-secondary">Llamar</a>
+        </div>
+      </div>
+      <div class="store-map">
+        <iframe title="Mapa San Nicolás de los Arroyos" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="about:blank"
+          data-src="https://maps.google.com/maps?q=San%20Nicol%C3%A1s%20de%20los%20Arroyos%2C%20Buenos%20Aires&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section" id="faq" aria-labelledby="faq-title">
+    <div class="section-header reveal">
+      <h2 id="faq-title">Preguntas frecuentes en San Nicolás</h2>
+      <p>Respuestas rápidas si estás buscando Apple cerca tuyo.</p>
+    </div>
+    <div class="faq-list reveal">
+      <details class="faq-item">
+        <summary>¿Dónde comprar iPhone en San Nicolás de los Arroyos?</summary>
+        <p>En <strong>iStore San Nicolás</strong> vendemos iPhone, Mac, iPad y accesorios Apple con garantía oficial. Podés retirar en el local o consultar envío a zona. WhatsApp <a href="tel:+5403364018313">+54 0336 4018313</a>.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Puedo retirar el mismo día?</summary>
+        <p>Sí. Con stock disponible el retiro en San Nicolás es en el día. Te recomendamos confirmar por WhatsApp antes de acercarte.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Qué medios de pago aceptan?</summary>
+        <p>Mercado Pago, tarjetas, transferencia (con descuento) y consulta por efectivo en el local de San Nicolás de los Arroyos.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Los productos son originales?</summary>
+        <p>Sí. Trabajamos equipos sellados con <strong>garantía oficial Apple de 12 meses</strong>.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Hacen envíos fuera de San Nicolás?</summary>
+        <p>Sí, a zona y al interior a coordinar. Consultá costo y demora por WhatsApp según tu localidad.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="support" id="soporte">
+    <div class="support-content reveal">
+      <h2>¿Necesitás ayuda en San Nicolás?</h2>
+      <p>Escribinos por WhatsApp o llamanos al +54 0336 4018313. Te asesoramos para elegir el equipo ideal.</p>
+      <div class="support-actions">
+        <a href="https://wa.me/5403364018313" class="btn btn-primary" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="tel:+5403364018313" class="btn btn-secondary">+54 0336 4018313</a>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-col">
+        <h4>Productos</h4>
+        <ul>
+          <li><a href="#productos" data-filter="iphone">iPhone</a></li>
+          <li><a href="#productos" data-filter="mac">Mac</a></li>
+          <li><a href="#productos" data-filter="ipad">iPad</a></li>
+          <li><a href="#productos" data-filter="accesorios">Accesorios</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="#local">Retiro en local</a></li>
+          <li><a href="#features">Trade-in</a></li>
+          <li><a href="#features">Financiación</a></li>
+          <li><a href="#soporte">Soporte</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="https://wa.me/5403364018313" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="tel:+5403364018313">0336 401-8313</a></li>
+          <li><a href="#local">San Nicolás de los Arroyos</a></li>
+        </ul>
+      </div>
+      <div class="footer-col newsletter">
+        <h4>Newsletter</h4>
+        <p>Ofertas y lanzamientos en SN.</p>
+        <form class="newsletter-form" id="newsletterForm" novalidate>
+          <input type="email" name="email" placeholder="Tu email" required autocomplete="email" aria-label="Email">
+          <button type="submit" class="btn btn-primary btn-small">Suscribirme</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-payments">
+      <span>Medios de pago</span>
+      <div class="pay-badges">
+        <span class="pay-badge">Mercado Pago</span>
+        <span class="pay-badge">Visa</span>
+        <span class="pay-badge">Mastercard</span>
+        <span class="pay-badge">Transferencia</span>
+      </div>
+    </div>
+    <div class="footer-nap" aria-label="Datos del negocio">
+      <p><strong>iStore San Nicolás</strong> · San Nicolás de los Arroyos, Buenos Aires (CP 2900) · <a href="tel:+5403364018313">+54 0336 4018313</a> · <a href="https://wa.me/5403364018313" target="_blank" rel="noopener">WhatsApp</a></p>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 iStore San Nicolás de los Arroyos. Tienda Apple en San Nicolás. Todos los derechos reservados.</p>
+      <div class="footer-legal">
+        <a href="#">Privacidad</a>
+        <a href="#">Términos</a>
+        <a href="#">Devoluciones</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5403364018313?text=Hola%2C%20vengo%20de%20la%20web%20de%20iStore%20SN" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true" aria-labelledby="cartTitle">
+    <div class="cart-header"><h3 id="cartTitle">Tu carrito</h3>
+      <button class="icon-btn" id="closeCart" aria-label="Cerrar" type="button"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+    </div>
+    <div class="cart-items" id="cartItems"><p class="cart-empty">Tu carrito está vacío</p></div>
+    <div class="cart-footer">
+      <div class="cart-shipping" id="cartShipping"></div>
+      <div class="cart-total"><span>Total</span><strong id="cartTotal">$0</strong></div>
+      <button class="btn btn-primary btn-full" id="checkoutBtn" type="button" disabled>Finalizar compra</button>
+      <button class="btn btn-ghost btn-full" id="continueShopping" type="button">Seguir comprando</button>
+    </div>
+  </aside>
+
+  <aside class="cart-drawer wishlist-drawer" id="wishDrawer" aria-hidden="true" aria-labelledby="wishTitle">
+    <div class="cart-header"><h3 id="wishTitle">Favoritos</h3>
+      <button class="icon-btn" id="closeWish" aria-label="Cerrar" type="button"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+    </div>
+    <div class="cart-items" id="wishItems"><p class="cart-empty">Todavía no agregaste favoritos</p></div>
+  </aside>
+
+  <div class="overlay" id="overlay" hidden></div>
+
+  <div class="search-modal" id="searchModal" role="dialog" aria-modal="true" aria-label="Buscar" aria-hidden="true">
+    <div class="search-box">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="search" placeholder="Buscar iPhone, Mac, iPad…" id="searchInput" autocomplete="off" aria-label="Buscar">
+      <button class="icon-btn" id="closeSearch" aria-label="Cerrar" type="button"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+    </div>
+    <div class="search-results" id="searchResults"></div>
+  </div>
+
+  <div class="toast-wrap" id="toastWrap" aria-live="polite" aria-atomic="true"></div>
+
+  <div class="qv-modal" id="qvModal" role="dialog" aria-modal="true" aria-labelledby="qvTitle" aria-hidden="true">
+    <div class="qv-panel">
+      <button class="icon-btn qv-close" id="qvClose" aria-label="Cerrar" type="button"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+      <div class="qv-body" id="qvBody"></div>
+    </div>
+  </div>
+
+  <div class="checkout-modal" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle" aria-hidden="true">
+    <div class="checkout-panel">
+      <div class="checkout-header">
+        <h2 id="checkoutTitle">Checkout</h2>
+        <button class="icon-btn" id="closeCheckout" type="button" aria-label="Cerrar"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+      </div>
+      <div class="checkout-steps" id="checkoutSteps">
+        <span class="step active" data-step="1">1. Datos</span><span class="step-line"></span>
+        <span class="step" data-step="2">2. Pago</span><span class="step-line"></span>
+        <span class="step" data-step="3">3. Confirmar</span>
+      </div>
+      <div class="checkout-body">
+        <form id="checkoutForm" class="checkout-form" novalidate>
+          <div class="checkout-step-panel" data-panel="1">
+            <div class="form-group"><label for="ckName">Nombre completo</label><input type="text" id="ckName" required autocomplete="name" placeholder="Juan Pérez"></div>
+            <div class="form-row two">
+              <div class="form-group"><label for="ckEmail">Email</label><input type="email" id="ckEmail" required autocomplete="email" placeholder="juan@email.com"></div>
+              <div class="form-group"><label for="ckPhone">Teléfono</label><input type="tel" id="ckPhone" required autocomplete="tel" placeholder="336 401-8313"></div>
+            </div>
+            <div class="form-group delivery-toggle">
+              <label class="radio-line"><input type="radio" name="delivery" value="pickup" checked> Retiro en local (San Nicolás)</label>
+              <label class="radio-line"><input type="radio" name="delivery" value="ship"> Envío a domicilio</label>
+            </div>
+            <div id="shipFields">
+              <div class="form-group"><label for="ckAddress">Dirección</label><input type="text" id="ckAddress" autocomplete="street-address" placeholder="Calle y número"></div>
+              <div class="form-row two">
+                <div class="form-group"><label for="ckCity">Ciudad</label><input type="text" id="ckCity" value="San Nicolás de los Arroyos" autocomplete="address-level2"></div>
+                <div class="form-group"><label for="ckCp">CP</label><input type="text" id="ckCp" autocomplete="postal-code" placeholder="2900"></div>
+              </div>
+            </div>
+            <div class="form-group"><label for="ckNotes">Notas (opcional)</label><textarea id="ckNotes" rows="2" placeholder="Horario de retiro, referencias…"></textarea></div>
+          </div>
+          <div class="checkout-step-panel" data-panel="2" hidden>
+            <p class="pay-intro">Elegí el medio de pago</p>
+            <div class="pay-methods" role="radiogroup">
+              <label class="pay-method"><input type="radio" name="payment" value="mercadopago" checked>
+                <span class="pay-method-card"><span class="pay-method-icon mp">MP</span><span class="pay-method-text"><strong>Mercado Pago</strong><small>Tarjeta, débito, dinero en cuenta</small></span><span class="pay-check"></span></span>
+              </label>
+              <label class="pay-method"><input type="radio" name="payment" value="card">
+                <span class="pay-method-card"><span class="pay-method-icon card">💳</span><span class="pay-method-text"><strong>Tarjeta</strong><small>Demo local · hasta 12 cuotas</small></span><span class="pay-check"></span></span>
+              </label>
+              <label class="pay-method"><input type="radio" name="payment" value="transfer">
+                <span class="pay-method-card"><span class="pay-method-icon bank">🏦</span><span class="pay-method-text"><strong>Transferencia</strong><small>10% OFF</small></span><span class="pay-check"></span></span>
+              </label>
+            </div>
+            <div class="card-fields" id="cardFields" hidden>
+              <div class="form-group"><label for="ckCardNumber">Número</label><input type="text" id="ckCardNumber" inputmode="numeric" maxlength="19" placeholder="4242 4242 4242 4242" autocomplete="cc-number"></div>
+              <div class="form-row two">
+                <div class="form-group"><label for="ckCardExp">Vencimiento</label><input type="text" id="ckCardExp" maxlength="5" placeholder="MM/AA" autocomplete="cc-exp"></div>
+                <div class="form-group"><label for="ckCardCvv">CVV</label><input type="password" id="ckCardCvv" maxlength="4" placeholder="123" autocomplete="cc-csc"></div>
+              </div>
+              <div class="form-group"><label for="ckCardName">Nombre en la tarjeta</label><input type="text" id="ckCardName" autocomplete="cc-name"></div>
+              <p class="pay-hint">Demo: 4242… · cualquier fecha · CVV 123</p>
+            </div>
+            <div class="transfer-info" id="transferInfo" hidden>
+              <div class="transfer-box">
+                <p><strong>Alias:</strong> istore.sn.mp</p>
+                <p><strong>Titular:</strong> iStore San Nicolás</p>
+                <p class="transfer-note">10% OFF. Reserva 48 hs. Confirmamos por WhatsApp.</p>
+              </div>
+            </div>
+          </div>
+          <div class="checkout-step-panel" data-panel="3" hidden>
+            <div class="order-summary" id="orderSummary"></div>
+          </div>
+        </form>
+        <div class="checkout-success" id="checkoutSuccess" hidden>
+          <div class="success-icon">✓</div>
+          <h3>¡Listo!</h3>
+          <p class="success-msg" id="successMsg"></p>
+          <p class="success-order" id="successOrder"></p>
+          <a href="https://wa.me/5403364018313" class="btn btn-primary" target="_blank" rel="noopener">Avisanos por WhatsApp</a>
+          <button type="button" class="btn btn-ghost" id="successClose" style="margin-top:10px">Volver a la tienda</button>
+        </div>
+      </div>
+      <div class="checkout-footer" id="checkoutFooter">
+        <div class="checkout-total-line"><span>Total</span><strong id="checkoutTotal">$0</strong></div>
+        <div class="checkout-actions">
+          <button type="button" class="btn btn-ghost" id="checkoutBack" hidden>Volver</button>
+          <button type="button" class="btn btn-primary" id="checkoutNext">Continuar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
 </html>

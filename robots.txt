@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://istore-sn.com.ar/sitemap.xml
