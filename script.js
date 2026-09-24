@@ -1315,3 +1315,31 @@ window.addEventListener("load", () => {
   }, { rootMargin: "200px" });
   io.observe(iframe);
 })();
+
+
+/* ===== THEME TOGGLE ===== */
+(function initThemeToggle() {
+  const root = document.documentElement;
+  const btn = document.getElementById("themeToggle");
+  if (!btn) return;
+
+  function currentTheme() {
+    return root.getAttribute("data-theme") === "dark" ? "dark" : "light";
+  }
+
+  function applyTheme(theme) {
+    const t = theme === "dark" ? "dark" : "light";
+    root.setAttribute("data-theme", t);
+    try { localStorage.setItem("istore-theme", t); } catch (_) {}
+    btn.setAttribute("aria-label", t === "dark" ? "Cambiar a modo claro" : "Cambiar a modo oscuro");
+    const meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.setAttribute("content", t === "dark" ? "#141210" : "#F6EDD9");
+  }
+
+  // sync label on load
+  applyTheme(currentTheme());
+
+  btn.addEventListener("click", () => {
+    applyTheme(currentTheme() === "dark" ? "light" : "dark");
+  });
+})();
