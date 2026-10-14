@@ -1,0 +1,99 @@
+Creá un sitio web e-commerce y product showcase premium de tecnología/Apple, 100% responsive, en español de Argentina (voseo natural).
+
+### Marca y local
+- Nombre: iStore San Nicolás (iStore SN)
+- Ciudad: San Nicolás de los Arroyos, Buenos Aires, Argentina (CP 2900)
+- Teléfono / WhatsApp: +54 0336 4018313
+  - tel:+5403364018313
+  - https://wa.me/5403364018313
+- Horario: Lun–Vie 10–19 hs · Sáb 10–14 hs
+- Retiro en local en el día + envíos a zona/interior
+- Idioma: es-AR
+
+### Diseño (inspirado en Apple)
+- Minimalista, generoso white space, micro-interacciones
+- Colores: fondo #F5F5F7, texto #1D1D1F, secundario #515154 (buen contraste WCAG), cards blancas, acento #0071E3
+- Tipografía Inter / system-ui (estilo San Francisco)
+- Navbar sticky con backdrop-filter blur, logo “iStore SN”, links (iPhone, Mac, iPad, Accesorios, Local, Soporte), teléfono, buscar, favoritos, carrito, menú móvil
+- Hero full-viewport con producto flagship, CTAs Comprar / Conocé más, trust line, parallax suave
+- Trust bar: garantía oficial, local SN, 12 cuotas, WhatsApp
+- Grid de productos 3 columnas: filtros (chips con aria-pressed), orden, badges, swatches accesibles (button + aria-label), cuotas, wishlist, quick view, hover zoom
+- Features alternadas (por qué comprar, financiación, trade-in)
+- Categorías Mac / iPad / AirPods
+- Sección Local con mapa embebido (lazy-load iframe), NAP, botones WhatsApp y llamar
+- FAQ local visible
+- Footer multi-columna + medios de pago + NAP + newsletter
+- Botón flotante WhatsApp
+- Animaciones scroll reveal (fade-up, left, right, scale, stagger) + parallax con rAF
+- prefers-reduced-motion respetado
+- Skip link “Saltar al contenido principal” → #main
+- Landmark <main id="main">
+
+### E-commerce
+- Carrito drawer + localStorage, cantidades, envío gratis progresivo
+- Wishlist drawer
+- Búsqueda modal
+- Toasts (aria-live), sin alerts nativos
+- Checkout 3 pasos:
+  1) Datos + retiro en local o envío
+  2) Pago: Mercado Pago (real), Tarjeta (demo), Transferencia (10% OFF)
+  3) Resumen y confirmar
+- Validación con aria-invalid, role="alert" y mensajes de error visibles
+- Focus trap + restaurar foco + inert en fondo al abrir modales/drawers
+- Focus visible global
+
+### Mercado Pago (Checkout Pro)
+- Backend Node SIN dependencias npm (solo http/fs/url nativos)
+- POST /api/create-preference
+- Webhook POST /api/webhooks/mercadopago
+- Servir frontend estático desde la carpeta padre
+- Token SOLO en server/.env (MP_ACCESS_TOKEN) — nunca en el frontend
+- back_urls success/pending/failure con query ?status=&order=
+- Al volver de MP, mostrar resultado en el modal de checkout
+- .env.example documentado
+
+### SEO local San Nicolás
+- Title: "iPhone y Apple en San Nicolás de los Arroyos | iStore SN"
+- Meta description con ciudad, productos y teléfono
+- keywords, geo meta, robots, author
+- Open Graph + Twitter Card
+- canonical + hreflang es-AR
+- JSON-LD: LocalBusiness + ElectronicsStore + Store (NAP, geo, horarios, teléfono)
+- JSON-LD FAQPage + WebSite
+- FAQ on-page con keywords locales
+- robots.txt + sitemap.xml
+- Textos y alt de imágenes con keywords locales
+- Placeholder de dominio: https://istore-sn.com.ar/ (fácil de reemplazar)
+
+### Performance (Core Web Vitals)
+- preload de imagen LCP del hero + fetchpriority="high"
+- preconnect/dns-prefetch a fonts y CDN de imágenes
+- Fuentes Inter no bloqueantes (media print onload)
+- decoding="async", lazy en imágenes below-fold
+- Mapa Google con data-src lazy (IntersectionObserver)
+- content-visibility: auto en secciones below-fold
+- will-change solo durante scroll (clase is-scrolling)
+- min-height + skeleton en product-grid (menos CLS)
+- Hero sin opacity:0 inicial en el LCP
+- Cache-Control largo en CSS/JS/imágenes en el server
+- script.js con defer
+
+### Accesibilidad WCAG 2.2 AA
+- lang="es-AR"
+- Skip link, landmarks, labels en formularios
+- autocomplete en inputs
+- aria-label en iconos, aria-expanded/aria-controls en menú
+- role="dialog" + aria-modal + aria-labelledby en modales
+- Focus trap, inert, restore focus
+- aria-pressed en chips y swatches
+- Contraste AA en textos secundarios
+- focus-visible global
+- prefers-reduced-motion
+
+### Técnico
+- Archivos: index.html, styles.css, script.js, robots.txt, sitemap.xml
+- server/index.js (zero-dependency), server/.env, server/.env.example
+- Fully responsive mobile-first
+- Entregar zip listo para descomprimir y correr con: node server/index.js
+
+Referencia visual: Apple.com + tiendas Apple argentinas. Estilo ultra limpio, premium, no marketplace saturado.
